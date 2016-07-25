@@ -1,0 +1,21 @@
+import Boot from './boot';
+import Preloader from './preloader';
+import Intro from './intro';
+import Menu from './menu';
+import Options from './options';
+import Credits from './credits';
+import How_To_Play from './how_to_play';
+import Level_Opening from './level_opening';
+import Game from './game';
+
+const game = new Phaser.Game(640, 480, Phaser.AUTO, 'warriors-z-game');
+game.state.add('boot', new Boot());
+game.state.add('preloader', new Preloader());
+game.state.add('intro', new Intro());
+game.state.add('menu', new Menu());
+game.state.add('options', new Options());
+game.state.add('credits', new Credits());
+game.state.add('how_to_play', new How_To_Play());
+game.state.add('level_opening', new Level_Opening());
+game.state.add('game', new Game());
+game.state.start('boot');

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'saiyan';
+    src: url('/assets/fonts/saiyan_sans/Saiyan-Sans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
